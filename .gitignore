@@ -1,0 +1,8 @@
+users.csv
+locations.csv
+__pycache__/app.cpython-38.pyc
+__pycache__/app.cpython-39.pyc
+__pycache__/config.cpython-38.pyc
+__pycache__/config.cpython-39.pyc
+app2.py
+config.py
