@@ -35,7 +35,6 @@ $verification = Invoke-WebRequest -UseBasicParsing -Uri "https://support.microso
     "Sec-Fetch-Site"     = "same-origin"
     "Sec-Fetch-Mode"     = "cors"
     "Sec-Fetch-Dest"     = "empty"
-    #  "Referer"="https://support.microsoft.com/files?workspace=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ3c2lkIjoiNjA4MmQ2YmYtNjVkZS00ZGE5LWI2Y2QtYjk4N2Q4ODhmOWJhIiwic3IiOiIyMTA2MjkwMDQwMDA1NjUxIiwiYXBwaWQiOiJlNmVlNDNlYi0wZmJjLTQ1NDYtYmM1Mi00YzE2MWZjZGY0YzQiLCJzdiI6InYxIiwicnMiOiJFeHRlcm5hbCIsInd0aWQiOiI3MDdkMzc4Ny1iNDllLTQ4ZmItYWFlNC05MDc1YzJiZWZhYTQiLCJpc3MiOiJodHRwczovL2FwaS5kdG1uZWJ1bGEubWljcm9zb2Z0LmNvbSIsImF1ZCI6Imh0dHA6Ly9zbWMiLCJleHAiOjE2Mzk3NzY2NjIsIm5iZiI6MTYzMjAwMDY2Mn0.q8eFaU8udbXGAieh1ibOeHWb-9wwDrd3Xzd3RetXehscDujkeblEMJHZZNihGZyOY1ySF1WSlGUaL3gEw8arIJRNo2xWXxsCQGe8cr3P6YJyfz8125quKftmGyDvf6hgtFessDA8upIfb1AR7K75y3Ih8Xxcd36GaHqWwT69Th59UcSf9aFY712cnKbgDAwERewDEh1adgU5ZBrU4hKRBJ84_k1-7twoKPvoOFFjqBsGU7vQaFSY7zxqoYizqox4KEEYSiZnPynH9h2Q-oAUvvZSkiwSlDQSnb2VWJ9x3IC4UIdlNOqjvGe8SaIyHumwoynR3Bc-6vZbiczoA_Tk2A&wid="+$wid+""
     "Accept-Encoding"    = "gzip, deflate, br"
     "Accept-Language"    = "en-US,en;q=0.9"
 }
@@ -98,7 +97,7 @@ $resp = try {
         "Sec-Fetch-Site"         = "same-origin"
         "Sec-Fetch-Mode"         = "cors"
         "Sec-Fetch-Dest"         = "empty"
-        #"Referer"="https://support.microsoft.com/files?workspace=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ3c2lkIjoiNjA4MmQ2YmYtNjVkZS00ZGE5LWI2Y2QtYjk4N2Q4ODhmOWJhIiwic3IiOiIyMTA2MjkwMDQwMDA1NjUxIiwiYXBwaWQiOiJlNmVlNDNlYi0wZmJjLTQ1NDYtYmM1Mi00YzE2MWZjZGY0YzQiLCJzdiI6InYxIiwicnMiOiJFeHRlcm5hbCIsInd0aWQiOiI3MDdkMzc4Ny1iNDllLTQ4ZmItYWFlNC05MDc1YzJiZWZhYTQiLCJpc3MiOiJodHRwczovL2FwaS5kdG1uZWJ1bGEubWljcm9zb2Z0LmNvbSIsImF1ZCI6Imh0dHA6Ly9zbWMiLCJleHAiOjE2Mzk3NzY2NjIsIm5iZiI6MTYzMjAwMDY2Mn0.q8eFaU8udbXGAieh1ibOeHWb-9wwDrd3Xzd3RetXehscDujkeblEMJHZZNihGZyOY1ySF1WSlGUaL3gEw8arIJRNo2xWXxsCQGe8cr3P6YJyfz8125quKftmGyDvf6hgtFessDA8upIfb1AR7K75y3Ih8Xxcd36GaHqWwT69Th59UcSf9aFY712cnKbgDAwERewDEh1adgU5ZBrU4hKRBJ84_k1-7twoKPvoOFFjqBsGU7vQaFSY7zxqoYizqox4KEEYSiZnPynH9h2Q-oAUvvZSkiwSlDQSnb2VWJ9x3IC4UIdlNOqjvGe8SaIyHumwoynR3Bc-6vZbiczoA_Tk2A&wid="+$wid+""
+       
         "Accept-Encoding"        = "gzip, deflate, br"
         "Accept-Language"        = "en-US,en;q=0.9"
     } `
