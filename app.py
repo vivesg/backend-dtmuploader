@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask , send_from_directory , current_app
 from flask_restful import Resource, Api, reqparse
 import ast
 import uuid
@@ -26,7 +26,12 @@ DATABASE_ID = config.settings['database_id']
 CONTAINER_ID = config.settings['container_id']
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
+
+@app.route('/')
+def root():
+    return  current_app.send_static_file('index.html')
+
 api = Api(app)
 
 def create_items(container,data):
@@ -88,7 +93,7 @@ class cases(Resource):
             'workspace': args['workspace'],
             'wid': args['wid'],
             'pass': get_random_key(),
-            'ttl': 600
+            'ttl': 300
         }
 
 
@@ -110,6 +115,7 @@ api.add_resource(cases, '/cases')
 
 #if __name__ == '__main__':
 #    app.run()  # run our Flask app
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
